@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Clínica Santa Maria SAS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap1.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style1.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/descarga.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-fluid position-relative bg-white d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-success" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Cargando...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+    
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <a href="dashboard.html" class="navbar-brand mx-4 mb-3">
+                    <img src="images/popeye-removebg-preview.png" width="200px">
+                </a>
+            
+                <div class="navbar-nav w-100">
+                    <a href="dashboard.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="personal.html" class="nav-item nav-link"><i class="bi bi-person-plus-fill me-2"></i>Personal</a>
+                    <a href="paciente.html" class="nav-item nav-link"><i class="bi bi-person-heart"></i>Paciente</a>
+                    <a href="cita.html" class="nav-item nav-link"><i class="bi bi-table me-2"></i>Cita medica</a>
+                    <a href="orden.html" class="nav-item nav-link"><i class="bi bi-file-text-fill me-2"></i>Orden Médica</a>
+                    <a href="signin.html" class="nav-item nav-link"><i class="bi bi-reply-fill me-2"></i>Cerrar</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+                <a href="dashboard.html" class="navbar-brand d-flex d-lg-none me-4">
+                    <h2 class="text-success mb-0"><i class="fa fa-hashtag"></i></h2>
+                </a>
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <form class="d-none d-md-flex ms-4">
+                    <input class="form-control border-0" type="search" placeholder="Search">
+                </form>
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="images/blanco1.png" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Carlos te mando un mensaje</h6>
+                                    <small>Hace 15 min</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="images/blanco2.jpg" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Lucas te mando un mensaje</h6>
+                                    <small>hace 15 min</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" src="images/blanco3.png" alt="" style="width: 40px; height: 40px;">
+                                <div class="ms-2">
+                                    <h6 class="fw-normal mb-0">Juan te mando un mensaje</h6>
+                                    <small>Hace 15 min</small>
+                                </div>
+                            </div>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item text-center">Ver todos los mensajes</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <i class="fa fa-bell me-lg-2"></i>
+                            <span class="d-none d-lg-inline-flex">Notificación</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Perfil actualizado</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">Nuevo usuario añadido</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item">
+                                <h6 class="fw-normal mb-0">contraseña cambiada</h6>
+                                <small>15 minutes ago</small>
+                            </a>
+                            <hr class="dropdown-divider">
+                            <a href="#" class="dropdown-item text-center">Ver todas las notificaciones</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            <img class="rounded-circle me-lg-2" src="images/negrito2.png" alt="" style="width: 40px; height: 40px;">
+                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">Mi perfil</a>
+                            <a href="#" class="dropdown-item">Ajustes</a>
+                            <a href="#" class="dropdown-item">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+        <!-- Main Content -->
+    <div class="m     ain-content p-4">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h1>Nueva Orden Médica</h1>
+                <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+            </div>
+            <div class="card card-custom border-0 p-3">
+                <form>
+                    <!-- Datos del Paciente -->
+                    <div class="mb-4">
+                        <h2>Datos del Paciente</h2>
+                        <div class="mb-3">
+                            <label for="patientName" class="form-label">Nombre del Paciente</label>
+                            <input type="text" class="form-control" id="patientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="patientAge" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="patientAge" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="patientGender" class="form-label">Género</label>
+                            <select class="form-select" id="patientGender" required>
+                                <option value="">Seleccione...</option>
+                                <option value="male">Masculino</option>
+                                <option value="female">Femenino</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="patientAddress" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="patientAddress" required>
+                        </div>
+                    </div>
+        
+                    <!-- Datos del Médico -->
+                    <div class="mb-4">
+                        <h2>Datos del Médico</h2>
+                        <div class="mb-3">
+                            <label for="doctorName" class="form-label">Nombre del Médico</label>
+                            <input type="text" class="form-control" id="doctorName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="doctorLicense" class="form-label">Número de Licencia</label>
+                            <input type="text" class="form-control" id="doctorLicense" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="doctorSpecialty" class="form-label">Especialidad</label>
+                            <input type="text" class="form-control" id="doctorSpecialty" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="doctorContact" class="form-label">Contacto</label>
+                            <input type="text" class="form-control" id="doctorContact" required>
+                        </div>
+                    </div>
+        
+                    <!-- Datos de la Orden -->
+                    <div class="mb-4">
+                        <h2>Datos de la Orden</h2>
+                        <div class="mb-3">
+                            <label for="orderDate" class="form-label">Fecha de la Orden</label>
+                            <input type="date" class="form-control" id="orderDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderType" class="form-label">Tipo de Orden</label>
+                            <select class="form-select" id="orderType" required>
+                                <option value="">Seleccione...</option>
+                                <option value="labTest">Prueba de Laboratorio</option>
+                                <option value="imaging">Imagenología</option>
+                                <option value="therapy">Terapia</option>
+                                <option value="consultation">Consulta</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderDetails" class="form-label">Detalles de la Orden</label>
+                            <textarea class="form-control" id="orderDetails" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderNotes" class="form-label">Notas Adicionales</label>
+                            <textarea class="form-control" id="orderNotes" rows="3"></textarea>
+                        </div>
+                    </div>
+        
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+            
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light rounded-top p-4">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 text-center text-sm-start">
+                            © Clínica Santa María S.A.S – Todos los derechos reservados. 
+                        </div>
+                        <div class="col-12 col-sm-6 text-center text-sm-end">
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-success btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main1.js"></script>
+</body>
+
+</html>
